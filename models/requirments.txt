@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+joblib
+fastapi
+pathlib
+pydantic
+re
+matplotlib
+uvicorn
