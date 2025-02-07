@@ -80,4 +80,8 @@ def predict_player_value(player_data: PlayerData):
 def home():
     return {"message": "Football Player Value Prediction API is running!"}
 
+# Run the API server
+if __name__ == "__main__":
+    port = os.environ.get("PORT", 8000)  # Dynamically use the port
+    uvicorn.run(app, host="0.0.0.0", port=int(port))
 
