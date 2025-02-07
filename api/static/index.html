@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Player Value Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>⚽ Football Player Value Prediction</h1>
+    
+    <form id="predictForm">
+        <label>Overall: <input type="number" id="Overall" required></label>
+        <label>Finishing: <input type="number" id="Finishing" required></label>
+        <label>Wage (€): <input type="number" id="Wage" required></label>
+        <label>Potential: <input type="number" id="Potential" required></label>
+        <label>Reactions: <input type="number" id="Reactions" required></label>
+        <label>Weight (kg): <input type="number" id="Weight" required></label>
+        <label>Age: <input type="number" id="Age" required></label>
+        <label>Ball Control: <input type="number" id="BallControl" required></label>
+        <label>Dribbling: <input type="number" id="Dribbling" required></label>
+        <label>Stamina: <input type="number" id="Stamina" required></label>
+        <label>Vision: <input type="number" id="Vision" required></label>
+        <label>Preferred Foot (0=Left, 1=Right): <input type="number" id="PreferredFoot" required></label>
+        <label>Height (cm): <input type="number" id="Height" required></label>
+        <button type="submit">Predict</button>
+    </form>
+
+    <h2 id="result"></h2>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
