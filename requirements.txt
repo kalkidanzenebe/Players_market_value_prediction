@@ -5,6 +5,5 @@ joblib
 fastapi
 pathlib
 pydantic
-re
 matplotlib
 uvicorn
