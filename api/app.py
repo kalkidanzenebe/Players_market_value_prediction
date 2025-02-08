@@ -6,7 +6,8 @@ import numpy as np
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse
 from pathlib import Path
-
+import os
+import uvicorn
 # Initialize FastAPI app
 app = FastAPI(
     title="Football Player Value Prediction API",
@@ -83,5 +84,5 @@ def home():
 # Run the API server
 if __name__ == "__main__":
     port = os.environ.get("PORT", 8000)  # Dynamically use the port
-    uvicorn.run(app, host="0.0.0.0", port=int(port))
+    uvicorn.run(app, host="127.0.0.1", port=int(port))
 
